@@ -1,9 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { COLORS } from '../../../constants'
 
 const ReelScreen = () => {
     return (
-        <View>
+        <View style={styles.page}>
             <Text>ReelScreen</Text>
         </View>
     )
@@ -11,4 +12,9 @@ const ReelScreen = () => {
 
 export default ReelScreen
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    page: {
+        flex: 1,
+        backgroundColor: COLORS.white,
+    },
+})

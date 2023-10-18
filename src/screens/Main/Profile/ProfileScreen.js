@@ -1,9 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { COLORS } from '../../../constants'
 
 const ProfileScreen = () => {
     return (
-        <View>
+        <View style={styles.page}>
             <Text>ProfileScreen</Text>
         </View>
     )
@@ -11,4 +12,9 @@ const ProfileScreen = () => {
 
 export default ProfileScreen
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    page: {
+        flex: 1,
+        backgroundColor: COLORS.white,
+    },
+})

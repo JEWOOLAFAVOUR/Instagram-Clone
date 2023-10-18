@@ -1,9 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { COLORS } from '../../../constants'
 
 const SearchScreen = () => {
     return (
-        <View>
+        <View style={styles.page}>
             <Text>SearchScreen</Text>
         </View>
     )
@@ -11,4 +12,9 @@ const SearchScreen = () => {
 
 export default SearchScreen
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    page: {
+        flex: 1,
+        backgroundColor: COLORS.white,
+    },
+})
